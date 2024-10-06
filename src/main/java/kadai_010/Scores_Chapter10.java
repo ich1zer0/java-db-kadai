@@ -36,7 +36,6 @@ public class Scores_Chapter10 {
 
             // レコード更新
             String updateSql = "UPDATE scores SET score_math = 95, score_english = 80 WHERE id = 5;";
-
             System.out.println("レコード更新を実行します");
             int rowCnt = statement.executeUpdate(updateSql);
             System.out.println(rowCnt + "件のレコードが更新されました");
