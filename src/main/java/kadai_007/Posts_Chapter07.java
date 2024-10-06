@@ -1,7 +1,5 @@
 package kadai_007;
 
-import kadai_004.Employees_Chapter04;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
@@ -14,7 +12,7 @@ public class Posts_Chapter07 {
         Statement statement = null;
 
         try {
-            InputStream is = Objects.requireNonNull(Employees_Chapter04.class.getResource("/database.properties")).openStream();
+            InputStream is = Objects.requireNonNull(Posts_Chapter07.class.getResource("/database.properties")).openStream();
             if (is == null) {
                 throw new IOException("プロパティファイルが見つかりません: /database.properties");
             }
